@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1790828694182,
+      "tag": "0000_create_private_cover_letter_drafts",
+      "breakpoints": true
+    }
+  ]
+}
