@@ -3,11 +3,14 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/~oauth/(.*)",
-      "destination": "https://id-preview--bae5f8f2-d8d7-409d-b0f8-543162fe7877.lovable.app/~oauth/$1"
-    },
+      "destination": "https://id-preview--bae5f8f2-d8d7-409d-b0f8-543162fe7877.lovable.app/~oauth/$1",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
