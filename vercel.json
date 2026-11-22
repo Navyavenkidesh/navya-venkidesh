@@ -1,9 +1,13 @@
-{
+﻿{
   "framework": "vite",
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
+    {
+      "source": "/~oauth/(.*)",
+      "destination": "https://id-preview--bae5f8f2-d8d7-409d-b0f8-543162fe7877.lovable.app/~oauth/$1"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
