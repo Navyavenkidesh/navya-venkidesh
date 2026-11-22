@@ -2,7 +2,11 @@
 - [x] Make Render and Vercel deployments install reliably and serve the same local media and resume
 - [ ] Refine the cinematic opening and smooth portfolio page transitions
 - [x] Remove certificate buttons and update the professional title to ML/AI Engineer with 2+ years' experience
-- [x] Replace the opening with a five-second, profile-aligned cinematic intro; refine the dark palette and verify both
+- [x] Replace the opening with a five-secondgit config --global http.postBuffer 524288000
+git config --global http.lowSpeedLimit 0
+git config --global http.lowSpeedTime 999999
+
+, profile-aligned cinematic intro; refine the dark palette and verify both
 - [x] Verify and improve text, card, and control contrast in both themes across public pages and the private letter editor
 - [x] Link the gesture game demonstration supplied by the owner
 - [x] Add and verify a 3–4 second AI-themed website opening intro
