@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
 import { Layers, Building2, Sparkles } from "lucide-react";
 import { FloatingParticles, PulsingDots } from "./AnimatedBackground";
@@ -81,6 +81,15 @@ const impactStrip = [
 ];
 
 const resumeProjects = [
+  {
+    id: "custom-bot-manglish",
+    title: "Custom Bot (Manglish Agent)",
+    subtitle: "GenAI • NLP • Conversational AI",
+    description: "Conversational assistant handling English and Manglish queries using open-source LLMs, context management, and custom system prompts.",
+    outcome: "Accurate intent classification across mixed colloquial scripts",
+    tags: ["GenAI", "LLMs", "NLP", "Python", "Prompt Engineering"],
+    image: conversifyImage,
+  },
   {
     id: "gesture-controlled-game-interface",
     title: "Gesture-Controlled Game Interface",
