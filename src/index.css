@@ -1,52 +1,52 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Neutral midnight surfaces with restrained pastel signal colors */
-    --background: 222 47% 11%;
-    --foreground: 210 28% 96%;
+    /* Refined Deep Zinc (Apple / Raycast) aesthetic */
+    --background: 220 14% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 219 32% 14%;
-    --card-foreground: 210 25% 94%;
+    --card: 220 13% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 219 32% 14%;
-    --popover-foreground: 210 25% 94%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 190 74% 70%;
-    --primary-foreground: 222 47% 11%;
-    --primary-glow: 190 82% 76%;
+    --primary: 199 89% 68%;
+    --primary-foreground: 220 14% 6%;
+    --primary-glow: 199 95% 75%;
 
-    --secondary: 219 26% 19%;
-    --secondary-foreground: 210 22% 89%;
+    --secondary: 220 12% 14%;
+    --secondary-foreground: 220 10% 88%;
 
-    --muted: 219 23% 20%;
-    --muted-foreground: 214 17% 73%;
+    --muted: 220 12% 14%;
+    --muted-foreground: 220 10% 64%;
 
-    --border: 216 22% 30%;
-    --input: 216 22% 49%;
-    --ring: 190 74% 70%;
+    --border: 220 13% 18%;
+    --input: 220 13% 28%;
+    --ring: 199 89% 68%;
 
-    --success: 153 55% 68%;
-    --mint: 153 55% 72%;
-    --lavender: 264 65% 80%;
+    --success: 152 57% 63%;
+    --mint: 152 57% 63%;
+    --lavender: 262 60% 75%;
     --coral: 8 76% 74%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --accent: 264 65% 80%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 262 60% 75%;
+    --accent-foreground: 220 14% 6%;
 
     --radius: 0.65rem;
     --paper: 0 0% 100%;
     --paper-foreground: 224 35% 14%;
     --paper-muted: 218 18% 35%;
-    --cinema: 222 26% 8%;
-    --cinema-foreground: 210 28% 96%;
-    --cinema-muted: 210 18% 83%;
-    --cinema-shade: 222 26% 8%;
+    --cinema: 220 14% 6%;
+    --cinema-foreground: 0 0% 98%;
+    --cinema-muted: 220 10% 80%;
+    --cinema-shade: 220 14% 6%;
     color-scheme: dark;
   }
 
@@ -82,7 +82,6 @@
     color-scheme: light;
   }
 }
-
 
 @layer base {
   * {
@@ -181,7 +180,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar - Professional dark */
+/* Custom scrollbar - Deep Zinc */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -191,7 +190,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.4);
+  background: hsl(var(--border));
   border-radius: 4px;
 }
 
