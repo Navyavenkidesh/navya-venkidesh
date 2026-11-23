@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
 import { Layers, Building2, Sparkles } from "lucide-react";
 import { FloatingParticles, PulsingDots } from "./AnimatedBackground";
@@ -8,6 +8,7 @@ import classifierImage from "@/assets/project-classifier.jpg";
 import nlpImage from "@/assets/project-nlp.jpg";
 import pdfAssistantImage from "@/assets/project-ai-pdf-assistant.jpg";
 import conversifyImage from "@/assets/project-conversify.jpg";
+import customBotImage from "@/assets/project-custom-bot.jpg";
 import gestureImage from "@/assets/project-gesture.jpg";
 import emotionImage from "@/assets/project-emotion.jpg";
 import censusImage from "@/assets/project-census.jpg";
@@ -83,12 +84,13 @@ const impactStrip = [
 const resumeProjects = [
   {
     id: "custom-bot-manglish",
-    title: "Custom Bot (Manglish Agent)",
-    subtitle: "GenAI • NLP • Conversational AI",
-    description: "Conversational assistant handling English and Manglish queries using open-source LLMs, context management, and custom system prompts.",
-    outcome: "Accurate intent classification across mixed colloquial scripts",
-    tags: ["GenAI", "LLMs", "NLP", "Python", "Prompt Engineering"],
-    image: conversifyImage,
+    title: "Custom Bot (Manglish AI Support Agent)",
+    subtitle: "NLP, RAG and Local LLMs at Zen Meraki",
+    description:
+      "Multi-tenant customer support agent that understands Manglish (Malayalam in English letters) and answers from each shop's verified catalog and FAQs. A six-stage pipeline tries deterministic lookup, hybrid FAQ matching and RAG first, and uses a local Gemma 3 model only as a last resort.",
+    outcome: "Cuts LLM guessing on prices and hours; onboards a shop from a PDF brochure and runs fully local on a 4GB GPU",
+    tags: ["FastAPI", "Ollama", "Gemma 3", "sentence-transformers", "RAG", "Manglish NLP"],
+    image: customBotImage,
   },
   {
     id: "gesture-controlled-game-interface",
@@ -171,8 +173,7 @@ export function ProjectsSection() {
             Production ML Systems
           </h2>
           <p className="text-muted-foreground mt-3 max-w-2xl">
-            All projects below were designed and deployed at <span className="text-foreground">Zen Meraki</span> —
-            production-grade systems solving real business problems.
+            Production systems built at <span className="text-foreground">Zen Meraki</span>, plus personal projects in computer vision and applied ML.
           </p>
         </motion.div>
 
